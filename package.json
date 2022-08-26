@@ -1,0 +1,22 @@
+{
+  "name": "api-libri",
+  "version": "1.0.0",
+  "description": "API REST para a gestão dos dados do aplicativo appLibri.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "senai",
+    "jandira",
+    "ppdm",
+    "nodejs"
+  ],
+  "author": "Florbela Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
