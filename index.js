@@ -1,16 +1,13 @@
 const express = require('express');
 const app = express();
 
-//Test GET route
-app.get('/', (req, res) => {
-    res.send('Any answer'); 
-})
+app.use(express.json());
 
-//Dentists listing GET route
-app.get('/listagemDentistas', (req, res) => {
-    res.send('Dentist listing answer'); 
-})
+//Books routes file import
+const booksController = require('./controller/bookController');
 
-app.listen(3000, ()=>{
-    console.log('Application running on - http://localhost:3000');
+app.use('/', booksController);
+
+app.listen(1500, ()=>{
+    console.log('Application running on - http://localhost:1500');
 });
